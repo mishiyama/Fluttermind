@@ -1,5 +1,4 @@
-
-### TicTacToeFlutter
+# TicTacToeFlutter
 A classic Tic Tac Toe game built with Flutter, featuring a clean UI, player turns, win detection, and a tie feature.
 
 ---
@@ -21,7 +20,7 @@ samples, guidance on mobile development, and a full API reference.
 
 ## Running the Project
 
-To run  the projects in this repo, open a terminal and run:
+To run  the project , open a terminal and run:
 
 1. Clone the repo:
 ```bash
