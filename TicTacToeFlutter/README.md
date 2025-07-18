@@ -1,6 +1,8 @@
-# tic_tac_toe
 
-A new Flutter project.
+### TicTacToeFlutter
+A classic Tic Tac Toe game built with Flutter, featuring a clean UI, player turns, win detection, and a tie feature.
+
+---
 
 ## Getting Started
 
@@ -14,3 +16,27 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+---
+
+## Running the Project
+
+To run any of the projects in this repo, open a terminal and run:
+
+1. Clone the repo:
+```bash
+git clone https://github.com/mishiyama/Fluttermind.git
+```
+2. Navigate to the project folder:
+```bash
+cd Fluttermind/TicTacToeFlutter
+```
+
+3. Get dependencies:
+ ```bash
+flutter pub get
+```
+4. Run the app:
+```bash
+flutter run
+```
