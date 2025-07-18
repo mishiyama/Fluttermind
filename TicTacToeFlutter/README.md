@@ -21,7 +21,7 @@ samples, guidance on mobile development, and a full API reference.
 
 ## Running the Project
 
-To run any of the projects in this repo, open a terminal and run:
+To run  the projects in this repo, open a terminal and run:
 
 1. Clone the repo:
 ```bash
