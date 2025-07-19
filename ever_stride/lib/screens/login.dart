@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key});
 
   @override
-  State<Login> createState() => LoginState();
+  State<Login> createState() => _LoginState();
 }
 
-class LoginState extends State<Login> {
+class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(backgroundColor: Colors.white);
+    return SafeArea(child: Column());
   }
 }
