@@ -1,4 +1,4 @@
-# ever_stride
+# ever_stride (not finished under work )
 
 A new Flutter project.
 
