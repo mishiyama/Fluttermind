@@ -1,4 +1,4 @@
-import 'package:ever_stride/screens/home.dart';
+import 'package:ever_stride/screens/user_aim.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -28,14 +28,15 @@ class IntroScreen extends StatelessWidget {
                   borderRadius: BorderRadius.circular(24),
                   child: Stack(
                     children: [
-                      Transform.scale(
-                        scale: 1.5,
-                        child: Image.asset(
-                          'assets/images/runner.png',
-                          fit: BoxFit.contain,
-                          alignment: Alignment.centerRight,
-                          height: 500,
-                          width: double.infinity,
+                      Transform.translate(
+                        offset: const Offset(-50, 100),
+                        child: Transform.scale(
+                          scale: 1.5,
+                          child: Image.asset(
+                            'assets/images/runner.png',
+                            fit: BoxFit.contain,
+                            height: 500,
+                          ),
                         ),
                       ),
                       Positioned.fill(
@@ -92,7 +93,7 @@ class IntroScreen extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (_) => const UserInfoScreen(),
+                          builder: (_) => const PurposeScreen(),
                         ),
                       );
                     },
