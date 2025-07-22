@@ -29,7 +29,7 @@ class _PurposeScreenState extends State<PurposeScreen> {
         title: Text(
           "Your Purpose",
           style: GoogleFonts.blackOpsOne(
-            fontSize: 24,
+            fontSize: 30,
             color: Colors.lightGreenAccent,
           ),
         ),
