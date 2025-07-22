@@ -9,7 +9,6 @@ class PurposeScreen extends StatefulWidget {
 }
 
 class _PurposeScreenState extends State<PurposeScreen> {
-  // available purposes
   final List<String> purposes = [
     "Lose Weight",
     "Stay Fit",
@@ -18,7 +17,6 @@ class _PurposeScreenState extends State<PurposeScreen> {
     "Just Exploring",
   ];
 
-  // currently selected purpose
   String? selectedPurpose;
 
   @override
@@ -53,7 +51,7 @@ class _PurposeScreenState extends State<PurposeScreen> {
             ),
             const SizedBox(height: 24),
 
-            // interactive options
+            // 🔥 interactive options
             Expanded(
               child: ListView.builder(
                 itemCount: purposes.length,
@@ -129,8 +127,15 @@ class _PurposeScreenState extends State<PurposeScreen> {
 
             const SizedBox(height: 16),
 
-            // Continue Button
-           
+            // ✅ Continue Button
+            ElevatedButton(
+              onPressed: selectedPurpose == null
+                  ? null
+                  : () {
+                      // 👉 Handle navigation or save purpose here
+                      // Example:
+                      // Navigator.push(context, MaterialPageRoute(builder: (_) => NextScreen()));
+                    },
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.lightGreenAccent,
                 foregroundColor: Colors.black,
@@ -150,7 +155,7 @@ class _PurposeScreenState extends State<PurposeScreen> {
                   fontSize: 18,
                 ),
               ),
-            
+            ),
           ],
         ),
       ),
