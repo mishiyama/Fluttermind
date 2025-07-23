@@ -80,6 +80,41 @@ class _PurposeScreenState extends State<PurposeScreen> {
                               : Colors.white24,
                           width: 2,
                         ),
+                        boxShadow: isSelected
+                            ? [
+                                BoxShadow(
+                                  color: Colors.lightGreenAccent.withValues(
+                                    alpha: 0.5,
+                                  ),
+                                  blurRadius: 12,
+                                  spreadRadius: 2,
+                                ),
+                              ]
+                            : [],
+                      ),
+                      child: Row(
+                        children: [
+                          Icon(
+                            isSelected
+                                ? Icons.check_circle
+                                : Icons.circle_outlined,
+                            color: isSelected
+                                ? Colors.lightGreenAccent
+                                : Colors.white54,
+                          ),
+                          const SizedBox(width: 16),
+                          Expanded(
+                            child: Text(
+                              purpose,
+                              style: GoogleFonts.blackOpsOne(
+                                fontSize: 20,
+                                color: isSelected
+                                    ? Colors.lightGreenAccent
+                                    : Colors.white70,
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   );
