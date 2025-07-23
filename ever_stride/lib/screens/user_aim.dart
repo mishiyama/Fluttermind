@@ -52,7 +52,7 @@ class _PurposeScreenState extends State<PurposeScreen> {
             ),
             const SizedBox(height: 24),
 
-            // 🔥 interactive options
+            // interactive options
             Expanded(
               child: ListView.builder(
                 itemCount: purposes.length,
