@@ -19,8 +19,9 @@ class IntroScreen extends StatelessWidget {
               right: 30,
               child: Card(
                 elevation: 12,
-                shadowColor: Colors.lightGreenAccent.withValues(alpha: 0.6),
-                color: Colors.black.withValues(alpha: 0.4),
+
+                // shadowColor: Colors.lightGreenAccent.withValues(alpha: 0.6),
+                color: Colors.black.withValues(alpha: 0.2),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(24),
                 ),
@@ -34,6 +35,7 @@ class IntroScreen extends StatelessWidget {
                           scale: 1.5,
                           child: Image.asset(
                             'assets/images/runner.png',
+
                             fit: BoxFit.contain,
                             height: 500,
                           ),
