@@ -34,7 +34,7 @@ class _PurposeScreenState extends State<PurposeScreen> {
         centerTitle: true,
       ),
       body: Padding(
-        padding: const EdgeInsets.all(24.0),
+        padding: const EdgeInsets.fromLTRB(24.0, 24.0, 24.0, 40.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
@@ -119,6 +119,30 @@ class _PurposeScreenState extends State<PurposeScreen> {
                     ),
                   );
                 },
+              ),
+            ),
+            ElevatedButton(
+              onPressed: selectedPurpose == null
+                  ? null // disabled if nothing selected
+                  : () {},
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.lightGreenAccent,
+                foregroundColor: Colors.black,
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 40,
+                  vertical: 18,
+                ),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(30),
+                ),
+                elevation: 8,
+              ),
+              child: Text(
+                'Continue',
+                style: GoogleFonts.blackOpsOne(
+                  fontWeight: FontWeight.w900,
+                  fontSize: 18,
+                ),
               ),
             ),
           ],
