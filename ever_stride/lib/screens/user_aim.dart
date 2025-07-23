@@ -1,3 +1,4 @@
+import 'package:ever_stride/screens/user_weight.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -132,9 +133,10 @@ class _PurposeScreenState extends State<PurposeScreen> {
               onPressed: selectedPurpose == null
                   ? null
                   : () {
-                      // 👉 Handle navigation or save purpose here
-                      // Example:
-                      // Navigator.push(context, MaterialPageRoute(builder: (_) => NextScreen()));
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (_) => UserWeight()),
+                      );
                     },
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.lightGreenAccent,
