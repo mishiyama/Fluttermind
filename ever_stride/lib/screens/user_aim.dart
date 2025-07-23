@@ -9,6 +9,14 @@ class PurposeScreen extends StatefulWidget {
 }
 
 class _PurposeScreenState extends State<PurposeScreen> {
+  final List<String> purposes = [
+    "Lose Weight",
+    "Stay Fit",
+    "Train for an Event",
+    "Track Daily Steps",
+    "Just Exploring",
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
