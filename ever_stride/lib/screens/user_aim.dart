@@ -16,7 +16,7 @@ class _PurposeScreenState extends State<PurposeScreen> {
     "Track Daily Steps",
     "Just Exploring",
   ];
-
+  String? selectedPurpose;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -47,6 +47,23 @@ class _PurposeScreenState extends State<PurposeScreen> {
                   fontStyle: FontStyle.italic,
                   color: Colors.white70,
                 ),
+              ),
+            ),
+            const SizedBox(height: 24),
+            Expanded(
+              child: ListView.builder(
+                itemCount: purposes.length,
+                itemBuilder: (context, index) {
+                  final purpose = purposes[index];
+                  final isSelected = selectedPurpose == purpose;
+                  return GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        selectedPurpose = purpose;
+                      });
+                    },
+                  );
+                },
               ),
             ),
           ],
