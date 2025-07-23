@@ -25,6 +25,25 @@ class _PurposeScreenState extends State<PurposeScreen> {
         ),
         centerTitle: true,
       ),
+      body: Padding(
+        padding: const EdgeInsets.all(24.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Center(
+              child: Text(
+                '"Why are you joining EverStride !?"',
+
+                style: GoogleFonts.aBeeZee(
+                  fontSize: 15,
+                  fontStyle: FontStyle.italic,
+                  color: Colors.white70,
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
