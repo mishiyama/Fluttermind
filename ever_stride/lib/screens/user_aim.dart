@@ -62,6 +62,26 @@ class _PurposeScreenState extends State<PurposeScreen> {
                         selectedPurpose = purpose;
                       });
                     },
+                    child: AnimatedContainer(
+                      duration: const Duration(milliseconds: 250),
+                      margin: const EdgeInsets.symmetric(vertical: 8),
+                      padding: const EdgeInsets.symmetric(
+                        vertical: 18,
+                        horizontal: 16,
+                      ),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        color: isSelected
+                            ? Colors.lightGreenAccent.withValues(alpha: 0.2)
+                            : Colors.black.withValues(alpha: 0.3),
+                        border: Border.all(
+                          color: isSelected
+                              ? Colors.lightGreenAccent
+                              : Colors.white24,
+                          width: 2,
+                        ),
+                      ),
+                    ),
                   );
                 },
               ),
