@@ -17,7 +17,7 @@ class _UserWeightState extends State<UserWeight> {
         backgroundColor: Colors.transparent,
         elevation: 0,
         title: Text(
-          "Your Purpose",
+          "Your weight",
           style: GoogleFonts.blackOpsOne(
             fontSize: 30,
             color: Colors.lightGreenAccent,
