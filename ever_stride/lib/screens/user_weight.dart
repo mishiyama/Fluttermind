@@ -1,30 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
-class UserWeight extends StatefulWidget {
-  const UserWeight({super.key});
+class UserWeightScreen extends StatefulWidget {
+  const UserWeightScreen({super.key});
 
   @override
-  State<UserWeight> createState() => _UserWeightState();
+  State<UserWeightScreen> createState() => _UserWeightScreenState();
 }
 
-class _UserWeightState extends State<UserWeight> {
+class _UserWeightScreenState extends State<UserWeightScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: const Color(0xFF0F2027),
-      appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-        title: Text(
-          "Your weight",
-          style: GoogleFonts.blackOpsOne(
-            fontSize: 30,
-            color: Colors.lightGreenAccent,
-          ),
-        ),
-        centerTitle: true,
-      ),
-    );
+    return Scaffold(backgroundColor: const Color(0xFF0F2027));
   }
 }

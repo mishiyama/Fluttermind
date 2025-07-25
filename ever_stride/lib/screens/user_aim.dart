@@ -128,7 +128,9 @@ class _PurposeScreenState extends State<PurposeScreen> {
                   : () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (_) => const UserWeight()),
+                        MaterialPageRoute(
+                          builder: (_) => const UserWeightScreen(),
+                        ),
                       );
                     },
               style: ElevatedButton.styleFrom(
