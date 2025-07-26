@@ -1,5 +1,6 @@
 import 'package:ever_stride/screens/splash.dart';
 import 'package:ever_stride/screens/user_aim.dart';
+import 'package:ever_stride/screens/user_weight.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -20,7 +21,10 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       home: SplashScreen(),
       darkTheme: ThemeData.dark(),
-      routes: {'/purposescreen': (context) => PurposeScreen()},
+      routes: {
+        '/purposescreen': (context) => PurposeScreen(),
+        '/personaldetails_screen': (context) => PersonalDetails(),
+      },
     );
   }
 }

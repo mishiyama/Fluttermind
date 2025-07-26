@@ -1,4 +1,3 @@
-import 'package:ever_stride/screens/user_weight.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -126,12 +125,7 @@ class _PurposeScreenState extends State<PurposeScreen> {
               onPressed: selectedPurpose == null
                   ? null // disabled if nothing selected
                   : () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (_) => const UserWeightScreen(),
-                        ),
-                      );
+                      Navigator.pushNamed(context, '/personaldetails_screen');
                     },
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.lightGreenAccent,

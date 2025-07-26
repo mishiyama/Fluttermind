@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
-class UserWeightScreen extends StatefulWidget {
-  const UserWeightScreen({super.key});
+class PersonalDetails extends StatefulWidget {
+  const PersonalDetails({super.key});
 
   @override
-  State<UserWeightScreen> createState() => _UserWeightScreenState();
+  State<PersonalDetails> createState() => _PersonalDetailsState();
 }
 
-class _UserWeightScreenState extends State<UserWeightScreen> {
+class _PersonalDetailsState extends State<PersonalDetails> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(backgroundColor: const Color(0xFF0F2027));
+    return Scaffold();
   }
 }
