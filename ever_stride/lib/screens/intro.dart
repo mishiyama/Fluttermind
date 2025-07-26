@@ -1,4 +1,3 @@
-import 'package:ever_stride/screens/user_aim.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -92,12 +91,7 @@ class IntroScreen extends StatelessWidget {
                   const SizedBox(height: 32),
                   ElevatedButton(
                     onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (_) => const PurposeScreen(),
-                        ),
-                      );
+                      Navigator.pushNamed(context, '/purposescreen');
                     },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.lightGreenAccent,
