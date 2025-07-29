@@ -10,6 +10,9 @@ class PersonalDetails extends StatefulWidget {
 class _PersonalDetailsState extends State<PersonalDetails> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      backgroundColor: const Color(0xFF0F2027),
+      body: SafeArea(child: Column()),
+    );
   }
 }
