@@ -1,3 +1,4 @@
+import 'package:ever_stride/screens/home.dart';
 import 'package:ever_stride/screens/splash.dart';
 import 'package:ever_stride/screens/user_aim.dart';
 import 'package:ever_stride/screens/user_weight.dart';
@@ -24,6 +25,7 @@ class _MyAppState extends State<MyApp> {
       routes: {
         '/purposescreen': (context) => PurposeScreen(),
         '/personaldetails_screen': (context) => PersonalDetails(),
+        '/homescreen': (context) => HomeScreen(),
       },
     );
   }
